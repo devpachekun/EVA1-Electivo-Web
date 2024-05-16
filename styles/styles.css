@@ -103,22 +103,80 @@ p {
     color: #22C55E;
 }
 
-.caja-seccion-quienes-somos {
-    background-color: blue;
+.seccion-beneficios {
+    padding: 2em;
+    color: #22C55E;
+    text-align: end;
+    background-color: #151515;
+    height: 80em;
 }
+
+
 
 .dupla-cajas {
     display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
 }
 
 .caja-quienes-somos-1, .caja-quienes-somos-2 {
-    width: 100%;
-    background-color: red;
+    width: 45%;
+    background-color: #151515;
+    border: solid 1px #22C55E;
     text-align: center;
+    padding: 1em;
+    overflow: initial;
 }
 
-.caja-quienes-somos-3 {
-    width: 100%;
-    background-color: green;
-    text-align: center;
+.caja-quienes-somos-1 img, .caja-quienes-somos-2 img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px;
 }
+
+.caja-beneficios-1, .caja-beneficios-2, .caja-beneficios-3 {
+    text-align: center;
+    background-color: #1A1A1A;
+    border: solid 1px #22C55E;
+    width: 30%;
+    padding: 1em;
+    height: 100%;
+}
+
+.caja-beneficios-4 {
+    text-align: center;
+    background-color: #1A1A1A;
+    border: solid 1px #22C55E;
+    width: 100%;
+    padding: 1em;
+    margin-top: 3em;
+    overflow: initial;
+}
+
+.caja-beneficios-4 h3 {
+    font-size: 2em;
+}
+
+.caja-beneficios-4 img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+.grupo-cajas-seccion-beneficios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3em;
+    height: 15em;
+    flex-wrap: wrap;
+}
+
+.seccion-testimonios {
+    padding: 2em;
+    color: #22C55E;
+    text-align: end;
+    background-color: #1A1A1A;
+    height: 83em;
+}
+

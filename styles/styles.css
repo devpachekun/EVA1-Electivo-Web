@@ -16,6 +16,8 @@ a, a:visited {
 
 h1 {
     color: #22C55E;
+    font-size: 3em;
+    margin: 0;
 }
 
 h2 {
@@ -29,6 +31,36 @@ h4 {
 
 p {
     color: #828282;
+}
+
+.btn-reservar {
+    background-color: #1A1A1A;
+    border: solid 1px #22C55E;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.btn-reservar:hover {
+    background-color: #393939;
+    border: solid 1px #22C55E;
+    color: #FFFFFF;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.btn-buscar-cancha {
+    background-color: #1A1A1A;
+    border: solid 1px #22C55E;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.btn-buscar-cancha:hover {
+    background-color: #393939;
+    border: solid 1px #22C55E;
+    color: #FFFFFF;
+    border-radius: 5px;
+    transition: 0.2s;
 }
 
 .nav-container {
@@ -74,6 +106,7 @@ p {
     z-index: 2; 
     padding: 3cap;
 }
+
 
 
 .header-2 img {
@@ -126,6 +159,7 @@ p {
     text-align: center;
     padding: 1em;
     overflow: initial;
+    border-radius: 5px;
 }
 
 .caja-quienes-somos-1 img, .caja-quienes-somos-2 img {
@@ -141,6 +175,7 @@ p {
     width: 30%;
     padding: 1em;
     height: 100%;
+    border-radius: 5px;
 }
 
 .caja-beneficios-4 {
@@ -151,6 +186,7 @@ p {
     padding: 1em;
     margin-top: 3em;
     overflow: initial;
+    border-radius: 5px;
 }
 
 .caja-beneficios-4 h3 {
@@ -177,6 +213,122 @@ p {
     color: #22C55E;
     text-align: end;
     background-color: #1A1A1A;
-    height: 83em;
+    height: 25em;
 }
+
+.grupo-cajas-seccion-testimonios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3em;
+    height: 15em;
+}
+
+.caja-testimonio-1, .caja-testimonio-2, .caja-testimonio-3 {
+    width: 30%;
+    height: 70%;
+    background-color: #151515;
+    border: solid 1px #22C55E;
+    padding: 1em;
+    text-align: start;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.caja-testimonio-1 p, .caja-testimonio-2 p, .caja-testimonio-3 p {
+    color: #22C55E;
+}
+
+.caja-testimonio-1 img, .caja-testimonio-2 img, .caja-testimonio-3 img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 50%;
+}
+
+.perfil-comentario-testimonio h6 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.perfil-comentario-testimonio p {
+    margin: 0;
+    font-size: .8em;
+    color: #828282;
+}
+
+.perfil-comentario-testimonio {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.foto-perfil {
+    width: 2em;
+    margin-right: 1em;
+}
+
+.info-perfil {
+    width: 100%;
+}
+
+.container-footer {
+    padding: 2em;
+    color: #22C55E;
+    text-align: end;
+    background-color: #151515;
+    height: 7em;
+    width: auto;
+}
+
+.contenido-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-izquierda {
+    width: 30%;
+}
+
+
+.footer-derecha {
+    width: 30%;
+}
+
+.logo-footer {
+    font-size: 2em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.rrss-footer {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rrss-footer img {
+    height: 20px;
+}
+
+.links-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+@media (max-width: 1334px) {
+
+    .caja-quienes-somos-1, .caja-quienes-somos-2 {
+        height: 35em;
+    }
+
+    .caja-beneficios-1, .caja-beneficios-2, .caja-beneficios-3 {
+        height: 18em;
+    }
+}
+
+
 

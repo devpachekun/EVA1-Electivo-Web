@@ -37,6 +37,10 @@ i {
     color: #22C557;
 }
 
+p {
+    margin-top: 0;
+}
+
 
 .perfil-desarrollador a {
     color: #22C557;
@@ -48,6 +52,7 @@ i {
 
 .perfil-desarrollador img {
     width: 100px;
+    margin-bottom: 1rem;
 }
 
 .btn-perfil {

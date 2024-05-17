@@ -20,6 +20,10 @@ h1 {
     margin: 0;
 }
 
+ul {
+    padding: 0;
+}
+
 h2 {
     font-size: 2em;
     margin-bottom: 0.5em;
@@ -53,6 +57,7 @@ p {
     border: solid 1px #22C55E;
     color: #FFFFFF;
     border-radius: 5px;
+    height: fit-content;
 }
 
 .btn-buscar-cancha:hover {
@@ -172,7 +177,6 @@ p {
     text-align: center;
     background-color: #1A1A1A;
     border: solid 1px #22C55E;
-    width: 30%;
     padding: 1em;
     height: 100%;
     border-radius: 5px;
@@ -182,10 +186,8 @@ p {
     text-align: center;
     background-color: #1A1A1A;
     border: solid 1px #22C55E;
-    width: 100%;
     padding: 1em;
     margin-top: 3em;
-    overflow: initial;
     border-radius: 5px;
 }
 
@@ -204,8 +206,8 @@ p {
     justify-content: space-between;
     align-items: center;
     margin-top: 3em;
-    height: 15em;
-    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .seccion-testimonios {
@@ -275,27 +277,24 @@ p {
 }
 
 .container-footer {
-    padding: 2em;
+    padding: 1em;
     color: #22C55E;
     text-align: end;
     background-color: #151515;
-    height: 7em;
     width: auto;
 }
 
 .contenido-footer {
     display: flex;
     justify-content: space-around;
+    padding: 1em;
 }
 
 .footer-izquierda {
-    width: 30%;
+    width: 40%;
 }
 
 
-.footer-derecha {
-    width: 30%;
-}
 
 .logo-footer {
     font-size: 2em;
@@ -317,16 +316,126 @@ p {
     display: flex;
     justify-content: space-between;
     font-size: 1.5em;
+    align-items: center;
 }
 
-@media (max-width: 1334px) {
+.contenedor-tres-primeras {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+}
 
-    .caja-quienes-somos-1, .caja-quienes-somos-2 {
-        height: 35em;
+@media (max-width: 1200px){
+
+    .caja-testimonio-1, .caja-testimonio-2, .caja-testimonio-3 {
+        width: 28%;
+    }
+
+    .seccion-testimonios {
+        height: 30em;
     }
 
     .caja-beneficios-1, .caja-beneficios-2, .caja-beneficios-3 {
-        height: 18em;
+        width: 28%;
+    }
+
+    .footer-derecha {
+        width: 50%;
+    }
+
+    .footer-izquierda {
+        width: 50%;
+    }
+}
+
+@media (max-width: 868px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-container label{
+        font-size: 2em;
+    }
+
+    .nav-links a{
+        margin: 0;
+    }
+
+    .links-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-izquierda {
+        width: 100%;
+        align-self: center;
+    }
+    
+    
+    .footer-derecha {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .dupla-cajas {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .caja-beneficios-4 {
+        margin-top: 0;
+    }
+
+    .seccion-beneficios {
+        height: 90em;
+    }
+
+    .caja-quienes-somos-1, .caja-quienes-somos-2 {
+        width: 95%;
+        margin-bottom: 2em;
+    }
+
+    .contenedor-tres-primeras {
+        flex-direction: column;
+    }
+
+    .caja-beneficios-1, .caja-beneficios-2, .caja-beneficios-3 {
+        width: 95%;
+        margin-bottom: 2em;
+    }
+
+    .grupo-cajas-seccion-testimonios{
+        flex-direction: column;
+    }
+
+    .seccion-testimonios {
+        height: 38em;
+    }
+
+    .caja-testimonio-1, .caja-testimonio-2, .caja-testimonio-3 {
+        width: 95%;
+        margin-bottom: 2em;
+    }
+
+    .contenido-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .seccion-beneficios {
+        height: 120em;
     }
 }
 
